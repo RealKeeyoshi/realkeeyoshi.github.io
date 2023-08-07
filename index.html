@@ -1,1 +1,195 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeyoshi Pyakurel</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a792192114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="full-body">
+
+        <!-- navbar and index page -->
+        <div id="header">
+            <div class="container">
+                <nav id="navbar">
+                    <img src="images/logo.png" class="logo" alt="">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()" ></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, My Name is <span>Keeyoshi</span><br>Pyakurel From Nepal</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- about section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/black_pp.png" alt="">
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Keeyoshi Pyakurel Software Developer </p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('educations')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desiging Web/App Interface</li>
+    
+                                <li><span>Web Development</span><br>Web app Development</li>
+    
+                                <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2019-2021</span><br>Covenry University</li>
+    
+                                <li><span>2023-Current</span><br>
+                                Pyakurel Photography</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span>2019</span><br>Covenry University</li>
+    
+                                <li><span>2021</span><br>HTML/CSS/JavaScript</li>
+    
+                                <li><span>2023</span><br>Python-Django/Reacts</li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services section  -->
+        <div id="section">
+            <div class="container">
+                <h1 class="sub-title"> My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Website Development</h2>
+                        <p>Python(Django), Reacts, HTML/CSS/JS</p>
+                        <a href="">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Mobile Development</h2>
+                        <p>Android Studio, Reacts Native </p>
+                        <a href="">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Design Website and Mobile Application</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio section  -->
+        <div id="portfolio">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App is thread for a app</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App is thread for a app</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App is thread for a app</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+
+        <!-- contact section  -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>
+                        Keeyoshi99@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>
+                        +977 **********</p>
+
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/logo.png" download class="btn btn2">Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+        
+                            <input type="email" name="email" placeholder="Your Email" required>
+        
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                         </form>   
+                         <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright section  -->
+        <div class="copyright">Copyright © Keeyoshi Pyakurel </div>
+
+        <!-- scroll up button  -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- main fullbodydiv end -->
+    </div>
+
+    <!-- javascript section  -->
+    <script src="js/index.js"></script>
+   
+</body>
+</html>
